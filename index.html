@@ -1,31 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKCET</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<style>
-    h1{
-        color: red;
+  <style>
+    form{
+        margin: 20px auto;
+        border: solid black;
+        width: 50%;
     }
-</style>
-<body style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyKSvYhNlNK-HqyupE2lqZ2h07y6TntvR3Z2-ZBAXw6jT5-7pHWwsLksF6CAklIISpl7k&usqp=CAU); background-repeat: no-repeat; background-size: cover;" >
-    <h1 style="text-align: center;">Sri Krishna College of Engineering and Technology</h1>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/SKI-Coimbatore-Logo.webp/225px-SKI-Coimbatore-Logo.webp.png" height="100px" width="100px"></a>
-    <center>
-    <P id="pl" ><B>Name : </B><input type="text" placeholder="Enter Your Name" style="padding-left: 1cm;"></p>
-    <P ><B>Class : </B><input type="text" placeholder="Enter Your Class" style="padding-left: 1cm;"></p>
-    <P ><B>Section : </B><input type="text" placeholder="Enter Your Section" style="padding-left: 1cm;"></p>
-        <P ><B>Mail : </B><input type="text" placeholder="Enter Your Mail" style="padding-left: 1cm;"></p>
-            <a href="cv.pdf"><img style="padding-left: 2cm;" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" height="150px" width="150px" ></a><br>
-            <button><a href="https://placement.skcet.ac.in/" target="_blank">Navigate to SKCET placement portal</a></button>
-            <p>College Website Link-<a href="http://www.skcet.ac.in" target="_blank">clg link</a><br></p>
-            <form>
-                <table border="1px" style="background-color: rgb(195, 176, 176);">
-                    <tr>
-                    <th>S.No</th>
+    .content{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(126, 173, 238);
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin: 0%;
+    
+}
+a:link,a:visited{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(243, 41, 41);
+    font-size: xx-large;
+    transition-duration: .8s;
+    }
+  </style>
+</head>
+    <body style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyKSvYhNlNK-HqyupE2lqZ2h07y6TntvR3Z2-ZBAXw6jT5-7pHWwsLksF6CAklIISpl7k&usqp=CAU); background-repeat: no-repeat; background-size: cover;" >
+        <div class="content">
+            <div><a href="style.html">Home</a></div>
+            <div><a href="index.html">About</a></div>
+            <div><a href="education.html">Education</a></div>
+            <div><a href="skill.html">Skill</a></div>
+            <a href="cv.pdf"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" height="50px" width="50px"></a>
+            </div>
+        <form >
+        <h1 style="text-align: center;">Sri Krishna College of Engineering and Technology</h1>
+        <center>
+            <img src="data:image/jpeg;base64,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" height="100px" width="100px"></a>
+            <P id="pl" ><B>Name : </B><input type="text" placeholder="Enter Your Name" style="padding-left: 1cm;"></p>
+                <P ><B>Class : </B><input type="text" placeholder="Enter Your Class" style="padding-left: 1cm;"></p>
+                <P ><B>Section : </B><input type="text" placeholder="Enter Your Section" style="padding-left: 1cm;"></p>
+                    <P ><B>Mail : </B><input type="text" placeholder="Enter Your Mail" style="padding-left: 1cm;"></p>
+                        <a href="cv.pdf"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" height="150px" width="150px" ></a><br>
+                        <button><a href="https://placement.skcet.ac.in/" target="_blank">Navigate to SKCET placement portal</a></button>
+                        <p>College Website Link-<a href="http://www.skcet.ac.in" target="_blank">clg link</a><br></p>
+                        <form>
+                            <table border="1px" style="background-color: rgb(195, 176, 176);">
+                                <tr>
+                                    <th>S.No</th>
                     <th>GRADE</th>
                     <th>PERSENTAGE</th>
                 </tr>
@@ -41,6 +68,8 @@
                 </tr>
             </table>
         </form>
+<br><br>
     </center>
+        </form>
 </body>
 </html>
